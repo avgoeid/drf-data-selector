@@ -2,4 +2,4 @@ class ItemsSelector:
     db_alias = "default"
     method = "get"
     path = "items/"
-    query = """SELECT * FROM tests_item"""
+    query = """SELECT name, size FROM tests_item"""
