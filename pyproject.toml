@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "drf-data-selector"
+version = "0.1.0"
+description = ""
+authors = ["Maksym Holovenko <avgoeid@gmail.com>"]
+readme = "README.md"
+packages = [{include = "drf_data_selector"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.3"
+djangorestframework = "^3.14.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = ["F", "I"]
+ignore = []
+line-length = 79
