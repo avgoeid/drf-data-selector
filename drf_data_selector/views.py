@@ -14,7 +14,7 @@ def method(selector):
 
 def view_fabric(selector):
     view = type(
-        selector.__name__ + "APIView",
+        selector.__name__ + views.APIView.__name__,
         (views.APIView,),
         {
             selector.method: method(selector),
